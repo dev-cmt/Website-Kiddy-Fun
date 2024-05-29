@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------------------------------------
+    Template Name: Kiddyfun
+    Description: Kids Toys Store and Baby Shop HTML5 Template
+    Author: Codezion
+    Author URI: https://www.templatemonster.com/authors/codezion/
+    Version: 1.0
+-----------------------------------------------------------------------------------*/
+@media (max-width: 1500px) {
+
+    /*category*/
+    .full_width_box .box {
+        padding: 30px 40px;
+    }
+
+    .full_width_box .box .action {
+        right: 40px;
+        bottom: 30px;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    /*category*/
+    .full_width_box .box {
+        padding: 30px 30px;
+    }
+
+    .full_width_box .box .action {
+        right: 30px;
+        bottom: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header .navigation .menu-item-has-children .sub-menu {
+        display: block !important;
+    }
+}
+
+@media (max-width: 991px) {
+
+    /*navigation*/
+    .header .hamburger {
+        display: flex;
+    }
+
+    .header .navigation.open {
+        height: calc(100vh - 73px);
+    }
+
+    .header .navigation .main-menu {
+        display: block;
+    }
+
+    .header .navigation {
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 73px;
+        height: 0;
+        overflow-y: auto;
+        width: 100%;
+        background-color: var(--thm-color-two);
+        transition: 0.5s all;
+        z-index: 100;
+    }
+
+    .header .navigation .menu-item-has-children .sub-menu .menu-item>a,
+    .header .navigation .main-menu>.menu-item>a {
+        width: 100%;
+        padding: 12px;
+        border-bottom: 1px solid var(--thm-white);
+        color: var(--thm-white);
+        font-size: 14px;
+        justify-content: space-between;
+        display: flex;
+        background-color: var(--thm-color-two);
+    }
+
+    .header .navigation .main-menu>.menu-item>a:before {
+        display: none;
+    }
+
+    .header .navigation .menu-item-has-children .sub-menu {
+        position: relative;
+        top: 0;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+        width: 100%;
+    }
+
+    .header .navigation .menu-item-has-children .sub-menu .menu-item-has-children>a:after {
+        position: relative;
+        right: 0;
+        transform: none;
+    }
+
+    .header .navigation .menu-item-has-children .sub-menu .menu-item-has-children>.sub-menu {
+        left: 0;
+    }
+
+    /*banner*/
+    .single_banner .banner_elements .element_two {
+        top: 15%;
+        left: 70%;
+        transform: translateX(-30%);
+    }
+
+    .single_banner .banner_elements .element_four {
+        max-width: 250px;
+    }
+
+    .modal-dialog {
+        margin: .5rem;
+    }
+
+    /*tean*/
+    .team_details.team_box>svg.inner-dashed-border,
+    .team_details .team_image {
+        height: auto;
+    }
+
+    /*wishlist*/
+    .shop_table .table_product {
+        width: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /*cta*/
+    .cta_bg h2 {
+        font-size: 36px;
+    }
+
+    /*search*/
+    .search-form-wrapper .close-btn {
+        top: 30px;
+        right: 30px;
+    }
+
+    .shopModal .shop-single-content {
+        padding: 0;
+    }
+
+    .modal-body {
+        padding: 5px;
+        padding-bottom: calc(5px - 1rem);
+    }
+
+    /*comments*/
+    .comments .children {
+        padding-left: 0;
+    }
+
+    /*post nav*/
+    .post_navigation .nav_style.right_style {
+        flex-direction: unset;
+        text-align: left;
+    }
+
+    .post_navigation .nav_style.right_style .image_thumb {
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    /*Header*/
+    .single_banner .banner_elements,
+    .header .header_actions ul {
+        display: none;
+    }
+
+    /*banner*/
+    .single_banner .banner_text .title {
+        font-size: 42px;
+    }
+
+    .gallery_box svg.inner-dashed-border {
+        top: 20px;
+        left: 20px;
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+    }
+
+    /*comments*/
+    .comments .comment .comment_text {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .comments .comment .comment_text .rating {
+        position: relative;
+    }
+
+    .contact_page {
+        padding: 30px;
+        padding-bottom: 0;
+    }
+
+    /*product details*/
+    .product_slider_box {
+        flex-direction: column-reverse;
+    }
+
+    .product_slider_box .product_slider_nav {
+        width: 100%;
+        margin-top: 15px;
+        margin-right: 0;
+    }
+
+    .product_slider_box .product_slider {
+        width: 100%;
+    }
+
+    .product_slider_box .product_slider_nav .slide_item {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /*service*/
+    .service_box {
+        padding: 30px;
+    }
+
+    /*team Details*/
+    .team_details_info {
+        font-size: 14px;
+    }
+
+    .gallery_box svg.inner-dashed-border {
+        top: 10px;
+        left: 10px;
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+    }
+
+    .contact_page {
+        padding: 20px;
+        padding-bottom: 0;
+    }
+
+    .checkout_box,
+    .login_box,
+    .error-page,
+    .post.post_details {
+        padding: 20px;
+    }
+}
